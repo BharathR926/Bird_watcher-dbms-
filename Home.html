@@ -1,171 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>Bird Watcher</title>
 </head>
+<!-- navbar -->
 
 <body>
     <header>
-        <nav class="nav-wrapper-right green">
+        <nav class="nav-wrapper transparent">
             <div class="container">
-
                 <a href="#" class="brand-logo">Bird Watcher</a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                    <i class="material-icons">menu</i></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
                 </a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Recordings</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#birds">Birds</a></li>
+                    <li><a href="#feedback">FeedBack</a></li>
+                    <li><a href="#about">About</a></li>
+
+                    <a class="waves-effect waves-light #c6ff00 lime accent-3 text-black btn">Login</a>
+                    <li>
+                        <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
                 </ul>
+                <ul class="sidenav #e0e0e0 grey lighten-2" id="mobile-menu">
+                    <li><a href="#">Birds</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#about">About</a></li>
 
-
+                </ul>
             </div>
-
         </nav>
-        <ul id="mobile-links" class="sidenav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recordings</a></li>
-            <li><a href="#">Images</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        <div class="bgimage">
-            <div class="container">
-
-
-                <div class="search_box">
-                    <input type="text-white" class="input" placeholder="What are you looking for ?">
-
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                                <i class="material-icons right">send</i>
-                     </button>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
     </header>
-
-    <div class="row">
-        <div class="col s4 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="b11.jpg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
+    <!-- photo / grid -->
+    <section class="container section " id="photo">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="images/camera.png" alt="" class="responsive-img materialboxed">
             </div>
-
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">Photos</h2>
+                <p>lo amogh images quality bagge matadu.</p>
+            </div>
         </div>
-        <div class="col s4 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="b2.jpg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
+        <div class="row">
+            <div class="col s12 l4 offset-l1 push-l7">
+                <img src="images/recording.jpg" alt="" class="responsive-img materialboxed">
             </div>
-
+            <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                <h2 class="indigo-text text-darken-4">Recordings</h2>
+                <p>lo illi Audio professional record madtare anta helu.</p>
+            </div>
         </div>
-        <div class="col s4 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="b3.jpg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
 
-        </div>
-        <div class="col s4 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="b4.jpg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
 
-        </div>
-        <div class="col s4 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="b1.jpg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-
-        </div>
-        <div class="col s4 m3">
-            <div class="card">
-                <div class="card-image">
-                    <img src="sparrow.jpg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-
+    </section>
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="images/palax.jpg" alt="" class="responsive-img">
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- contact form -->
+    <section class="section container scrollspy" id="feedback">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">FeedBack</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+
+
+
+                    <div class="input-field center">
+                        <button class="btn">Submit</button>
+                    </div>
+                    <div class="stars">
+                        <form action="">
+                            <input class="star star-5" id="star-5" type="radio" name="star" />
+                            <label class="star star-5" for="star-5"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star" />
+                            <label class="star star-4" for="star-4"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star" />
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star" />
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star" />
+                            <label class="star star-1" for="star-1"></label>
+                        </form>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="page-footer grey darken-3 scrollspy" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2020 Bird Watcher</div>
+        </div>
+    </footer>
+
+
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script>
         $(document).ready(function() {
+
             $('.sidenav').sidenav();
-        })
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+
+        });
     </script>
+
+
 
 </body>
 
