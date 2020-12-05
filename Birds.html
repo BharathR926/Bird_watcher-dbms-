@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="birds.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <title>Bird Watcher</title>
+</head>
+
+
+
+<body>
+    <header>
+        <div class="navbar-fixed ">
+            <nav class="nav-wrapper green">
+                <div class="container">
+                    <a href="#" class="brand-logo">Bird Watcher</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Birds.html">Birds</a></li>
+                        <li><a href="#feedback">FeedBack</a></li>
+                        <li><a href="#About">About</a></li>
+
+                        <a class="waves-effect waves-light #c6ff00 lime accent-3 text-black btn">Login</a>
+                        <li>
+                            <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="sidenav #e0e0e0 grey lighten-2" id="mobile-menu">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Birds.html">Birds</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#About">About</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="search_box">
+            <input type="text" placeholder="what are you looking for?">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('.sidenav').sidenav();
+
+            $('.scrollspy').scrollSpy();
+
+        });
+    </script>
+</body>
+
+</html>
