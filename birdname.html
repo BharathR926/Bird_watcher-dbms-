@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <title>*birdname*</title>
+
+    <style>            
+        /*.image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .Overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .container:hover .Overlay {
+            opacity: 0.5;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }*/                                           
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed ">
+            <nav class="nav-wrapper green">
+                <div class="container">
+                    <a href="Home.html" class="brand-logo">Bird Watcher</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Birds.html">Birds</a></li>
+                        <li><a href="#feedback">FeedBack</a></li>
+                        <li><a href="#About">About</a></li>
+
+                        <a href="log-in.html" class=" lime accent-3 black-text btn" style="border-radius: 50px;">Login</a>  
+                        <li>
+                            <a href="#" class="tooltipped btn-floating btn-small red accent-3" data-position="bottom" data-tooltip="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tooltipped btn-floating btn-small  blue lighten-1" data-position="bottom" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="sidenav #e0e0e0 grey lighten-2" id="mobile-menu">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Birds.html">Birds</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#About">About</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <h2>*birdname*</h2>
+    <div class="container">
+        <img src="images/b1.jpg" alt="birdpic" id="image">
+        <div  class=""><!--Insert Overlay in 'class' for the hover effect **Work in progress**-->
+            <div class="text btn-floating pink text" style="text-align: center;"><a href="images/b1.jpg" download><span><i class="material-icons">download</i></span></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <audio controls>
+                <source src="Audio/XC409856 - Greater Sooty Owl - Tyto tenebricosa.mp3">
+                    Sorry to hear but it does not Support your browser 
+            </audio>
+        </div>
+    </div>
+    <div class="container">
+        <h4>bird name:</h4><p>kage1</p>
+        <h4>bird sciname:</h4><p>kage1 SciName</p>
+        <h4>bird origin:</h4><p>kage1 origin</p>
+        <h4>bird moreinfo:</h4><a href="#">here</a>
+        <br>
+        <p1 style="padding: 5%;font-size: 20px;">So this is gonna be some info on kage1 
+        like</p1>
+        <br>  
+        <br>  
+        <br>
+        <div class="container" style="background-color: bisque; border-style: solid; border-width: 1px;">    
+            <p style="padding: 5%;font-size: 20px;"> If your interested in sharing ur content with others you can always upload your own audio and photos!!
+                <br><br>    
+            For Photos of birds:<i class="material-icons photoUP" >upload</i>
+                <br><br>   
+            For Audio of birds:<i class="material-icons audioUP" >upload</i></p>     
+                <br> 
+        </div> 
+        <br>          
+    </div>
+    <!-- footer -->
+    <footer class="page-footer grey darken-3 scrollspy" id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5>About Us</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2020 Bird Watcher</div>
+        </div>
+    </footer>
+</body>
+</html>
