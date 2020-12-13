@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,16 +20,20 @@
             height: 70%;
             margin: 20px;*/
         }
+        
         .tabs .indicator {
             background-color: blue;
         }
-        .tabs .tab a:focus, .tabs .tab a:focus.active{
+        
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
             background-color: transparent;
         }
-        .section{
+        
+        .section {
             margin-top: 5%;
             margin-bottom: 5%;
-            margin-left: 25%; 
+            margin-left: 25%;
             padding-left: 15%;
             padding-top: 5%;
             width: 50%;
@@ -36,16 +41,19 @@
             opacity: 0.9;
             font-weight: bold;
         }
+        
         .btn {
             width: 40%;
-            margin-left: 40px;          
+            margin-left: 40px;
         }
+        
         body {
             background-image: url('images/login_bg.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
         }
+        
         #avatar {
             width: 60%;
             border-radius: 70%;
@@ -53,6 +61,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- services / tabs -->
     <section class="section container z-depth-3" id="services">
@@ -69,17 +78,17 @@
                 </ul>
                 <div id="login" class="col s12">
                     <h3 class="indigo-text text-darken-4 ">Log-In</h3>
-                        <div class="input-field">
-                            <i class="material-icons prefix">email</i>
-                            <input type="email" name="mail" id="email">
-                            <label for="email">Enter your E-mail</label>
-                        </div>    
-                        <div class="input-field">
-                            <i class="material-icons prefix">password</i>
-                            <input type="password" name="pwd" id="pwd">
-                            <label for="pwd">Enter password</label>
-                        </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" name="mail" id="email">
+                        <label for="email">Enter your E-mail</label>
                     </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">password</i>
+                        <input type="password" name="pwd" id="pwd">
+                        <label for="pwd">Enter password</label>
+                    </div>
+                </div>
                 <div id="signup" class="col s12">
                     <h3 class=" indigo-text text-darken-4">Sign-Up</h3>
                     <div class="input-field">
@@ -90,8 +99,8 @@
                     <div class="input-field">
                         <i class="material-icons prefix">password</i>
                         <input type="password" name="pwd" id="pwd">
-                        <label for="pwd">Enter password</label>   
-                    </div>        
+                        <label for="pwd">Enter password</label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,4 +141,5 @@
         });
     </script>
 </body>
+
 </html>
